@@ -1,6 +1,7 @@
 import json, pathlib
 from extractors.keywords_mslearn import KeywordsMSLearn
 from extractors.base import merge_into, ensure_dir
+from extractors.operators_inputs import OperatorsIn
 
 OUT = pathlib.Path("out/spec.json")
 
@@ -27,6 +28,7 @@ def main():
 
     extractors = [
         KeywordsMSLearn(),
+        OperatorsIn(),
     ]
 
     for ex in extractors:

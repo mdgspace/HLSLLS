@@ -621,5 +621,252 @@
   "types": [],
   "functions": [],
   "semantics": [],
-  "operators": []
+  "operators": [
+    {
+      "name": "!",
+      "precedence": 2,
+      "left_to_right": false,
+      "kind": "prefix"
+    },
+    {
+      "name": "!=",
+      "precedence": 7,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "%",
+      "precedence": 3,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "%=",
+      "precedence": 14,
+      "left_to_right": false,
+      "kind": "infix"
+    },
+    {
+      "name": "&",
+      "precedence": 8,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "&&",
+      "precedence": 11,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "&=",
+      "precedence": 14,
+      "left_to_right": false,
+      "kind": "infix"
+    },
+    {
+      "name": "()",
+      "precedence": 1,
+      "left_to_right": true,
+      "kind": "postfix"
+    },
+    {
+      "name": "(type)",
+      "precedence": 2,
+      "left_to_right": false,
+      "kind": "prefix"
+    },
+    {
+      "name": "*",
+      "precedence": 3,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "*=",
+      "precedence": 14,
+      "left_to_right": false,
+      "kind": "infix"
+    },
+    {
+      "name": "+",
+      "precedence": 2,
+      "left_to_right": false,
+      "kind": "prefix"
+    },
+    {
+      "name": "++",
+      "precedence": 1,
+      "left_to_right": true,
+      "kind": "postfix"
+    },
+    {
+      "name": "+=",
+      "precedence": 14,
+      "left_to_right": false,
+      "kind": "infix"
+    },
+    {
+      "name": ",",
+      "precedence": 15,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "-",
+      "precedence": 2,
+      "left_to_right": false,
+      "kind": "prefix"
+    },
+    {
+      "name": "--",
+      "precedence": 1,
+      "left_to_right": true,
+      "kind": "postfix"
+    },
+    {
+      "name": "-=",
+      "precedence": 14,
+      "left_to_right": false,
+      "kind": "infix"
+    },
+    {
+      "name": ".",
+      "precedence": 1,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "/",
+      "precedence": 3,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "/=",
+      "precedence": 14,
+      "left_to_right": false,
+      "kind": "infix"
+    },
+    {
+      "name": ":",
+      "precedence": 13,
+      "left_to_right": false,
+      "kind": "infix"
+    },
+    {
+      "name": "<",
+      "precedence": 6,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "<<",
+      "precedence": 5,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "<<=",
+      "precedence": 14,
+      "left_to_right": false,
+      "kind": "infix"
+    },
+    {
+      "name": "<=",
+      "precedence": 6,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "=",
+      "precedence": 14,
+      "left_to_right": false,
+      "kind": "infix"
+    },
+    {
+      "name": "==",
+      "precedence": 7,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": ">",
+      "precedence": 6,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": ">=",
+      "precedence": 6,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": ">>",
+      "precedence": 5,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": ">>=",
+      "precedence": 14,
+      "left_to_right": false,
+      "kind": "infix"
+    },
+    {
+      "name": "?",
+      "precedence": 13,
+      "left_to_right": false,
+      "kind": "infix"
+    },
+    {
+      "name": "?:",
+      "precedence": 13,
+      "left_to_right": false,
+      "kind": "ternary"
+    },
+    {
+      "name": "[]",
+      "precedence": 1,
+      "left_to_right": true,
+      "kind": "postfix"
+    },
+    {
+      "name": "^",
+      "precedence": 9,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "^=",
+      "precedence": 14,
+      "left_to_right": false,
+      "kind": "infix"
+    },
+    {
+      "name": "|",
+      "precedence": 10,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "|=",
+      "precedence": 14,
+      "left_to_right": false,
+      "kind": "infix"
+    },
+    {
+      "name": "||",
+      "precedence": 12,
+      "left_to_right": true,
+      "kind": "infix"
+    },
+    {
+      "name": "~",
+      "precedence": 2,
+      "left_to_right": false,
+      "kind": "prefix"
+    }
+  ]
 }
