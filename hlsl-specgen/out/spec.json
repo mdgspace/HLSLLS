@@ -1,0 +1,625 @@
+{
+  "comment": "generated from Microsoft Learn (and friends)",
+  "keywords": [
+    {
+      "name": "AppendStructuredBuffer",
+      "kind": "hlsl"
+    },
+    {
+      "name": "asm",
+      "kind": "hlsl"
+    },
+    {
+      "name": "asm_fragment",
+      "kind": "hlsl"
+    },
+    {
+      "name": "auto",
+      "kind": "reserved"
+    },
+    {
+      "name": "BlendState",
+      "kind": "hlsl"
+    },
+    {
+      "name": "bool",
+      "kind": "hlsl"
+    },
+    {
+      "name": "break",
+      "kind": "hlsl"
+    },
+    {
+      "name": "Buffer",
+      "kind": "hlsl"
+    },
+    {
+      "name": "ByteAddressBuffer",
+      "kind": "hlsl"
+    },
+    {
+      "name": "case",
+      "kind": "hlsl"
+    },
+    {
+      "name": "catch",
+      "kind": "reserved"
+    },
+    {
+      "name": "cbuffer",
+      "kind": "hlsl"
+    },
+    {
+      "name": "centroid",
+      "kind": "hlsl"
+    },
+    {
+      "name": "char",
+      "kind": "reserved"
+    },
+    {
+      "name": "class",
+      "kind": "hlsl"
+    },
+    {
+      "name": "column_major",
+      "kind": "hlsl"
+    },
+    {
+      "name": "compile",
+      "kind": "hlsl"
+    },
+    {
+      "name": "compile_fragment",
+      "kind": "hlsl"
+    },
+    {
+      "name": "CompileShader",
+      "kind": "hlsl"
+    },
+    {
+      "name": "ComputeShader",
+      "kind": "hlsl"
+    },
+    {
+      "name": "const",
+      "kind": "hlsl"
+    },
+    {
+      "name": "const_cast",
+      "kind": "reserved"
+    },
+    {
+      "name": "ConsumeStructuredBuffer",
+      "kind": "hlsl"
+    },
+    {
+      "name": "continue",
+      "kind": "hlsl"
+    },
+    {
+      "name": "default",
+      "kind": "hlsl"
+    },
+    {
+      "name": "delete",
+      "kind": "reserved"
+    },
+    {
+      "name": "DepthStencilState",
+      "kind": "hlsl"
+    },
+    {
+      "name": "DepthStencilView",
+      "kind": "hlsl"
+    },
+    {
+      "name": "discard",
+      "kind": "hlsl"
+    },
+    {
+      "name": "do",
+      "kind": "hlsl"
+    },
+    {
+      "name": "DomainShader",
+      "kind": "hlsl"
+    },
+    {
+      "name": "double",
+      "kind": "hlsl"
+    },
+    {
+      "name": "dword",
+      "kind": "hlsl"
+    },
+    {
+      "name": "dynamic_cast",
+      "kind": "reserved"
+    },
+    {
+      "name": "else",
+      "kind": "hlsl"
+    },
+    {
+      "name": "enum",
+      "kind": "reserved"
+    },
+    {
+      "name": "explicit",
+      "kind": "reserved"
+    },
+    {
+      "name": "export",
+      "kind": "hlsl"
+    },
+    {
+      "name": "extern",
+      "kind": "hlsl"
+    },
+    {
+      "name": "false",
+      "kind": "hlsl"
+    },
+    {
+      "name": "float",
+      "kind": "hlsl"
+    },
+    {
+      "name": "for",
+      "kind": "hlsl"
+    },
+    {
+      "name": "friend",
+      "kind": "reserved"
+    },
+    {
+      "name": "fxgroup",
+      "kind": "hlsl"
+    },
+    {
+      "name": "GeometryShader",
+      "kind": "hlsl"
+    },
+    {
+      "name": "goto",
+      "kind": "reserved"
+    },
+    {
+      "name": "groupshared",
+      "kind": "hlsl"
+    },
+    {
+      "name": "half",
+      "kind": "hlsl"
+    },
+    {
+      "name": "Hullshader",
+      "kind": "hlsl"
+    },
+    {
+      "name": "if",
+      "kind": "hlsl"
+    },
+    {
+      "name": "in",
+      "kind": "hlsl"
+    },
+    {
+      "name": "inline",
+      "kind": "hlsl"
+    },
+    {
+      "name": "inout",
+      "kind": "hlsl"
+    },
+    {
+      "name": "InputPatch",
+      "kind": "hlsl"
+    },
+    {
+      "name": "int",
+      "kind": "hlsl"
+    },
+    {
+      "name": "interface",
+      "kind": "hlsl"
+    },
+    {
+      "name": "line",
+      "kind": "hlsl"
+    },
+    {
+      "name": "lineadj",
+      "kind": "hlsl"
+    },
+    {
+      "name": "linear",
+      "kind": "hlsl"
+    },
+    {
+      "name": "LineStream",
+      "kind": "hlsl"
+    },
+    {
+      "name": "long",
+      "kind": "reserved"
+    },
+    {
+      "name": "matrix",
+      "kind": "hlsl"
+    },
+    {
+      "name": "min10float",
+      "kind": "hlsl"
+    },
+    {
+      "name": "min12int",
+      "kind": "hlsl"
+    },
+    {
+      "name": "min16float",
+      "kind": "hlsl"
+    },
+    {
+      "name": "min16int",
+      "kind": "hlsl"
+    },
+    {
+      "name": "min16uint",
+      "kind": "hlsl"
+    },
+    {
+      "name": "mutable",
+      "kind": "reserved"
+    },
+    {
+      "name": "namespace",
+      "kind": "hlsl"
+    },
+    {
+      "name": "new",
+      "kind": "reserved"
+    },
+    {
+      "name": "nointerpolation",
+      "kind": "hlsl"
+    },
+    {
+      "name": "noperspective",
+      "kind": "hlsl"
+    },
+    {
+      "name": "NULL",
+      "kind": "hlsl"
+    },
+    {
+      "name": "operator",
+      "kind": "reserved"
+    },
+    {
+      "name": "out",
+      "kind": "hlsl"
+    },
+    {
+      "name": "OutputPatch",
+      "kind": "hlsl"
+    },
+    {
+      "name": "packoffset",
+      "kind": "hlsl"
+    },
+    {
+      "name": "pass",
+      "kind": "hlsl"
+    },
+    {
+      "name": "pixelfragment",
+      "kind": "hlsl"
+    },
+    {
+      "name": "PixelShader",
+      "kind": "hlsl"
+    },
+    {
+      "name": "point",
+      "kind": "hlsl"
+    },
+    {
+      "name": "PointStream",
+      "kind": "hlsl"
+    },
+    {
+      "name": "precise",
+      "kind": "hlsl"
+    },
+    {
+      "name": "private",
+      "kind": "reserved"
+    },
+    {
+      "name": "protected",
+      "kind": "reserved"
+    },
+    {
+      "name": "public",
+      "kind": "reserved"
+    },
+    {
+      "name": "RasterizerState",
+      "kind": "hlsl"
+    },
+    {
+      "name": "register",
+      "kind": "hlsl"
+    },
+    {
+      "name": "reinterpret_cast",
+      "kind": "reserved"
+    },
+    {
+      "name": "RenderTargetView",
+      "kind": "hlsl"
+    },
+    {
+      "name": "return",
+      "kind": "hlsl"
+    },
+    {
+      "name": "row_major",
+      "kind": "hlsl"
+    },
+    {
+      "name": "RWBuffer",
+      "kind": "hlsl"
+    },
+    {
+      "name": "RWByteAddressBuffer",
+      "kind": "hlsl"
+    },
+    {
+      "name": "RWStructuredBuffer",
+      "kind": "hlsl"
+    },
+    {
+      "name": "RWTexture1D",
+      "kind": "hlsl"
+    },
+    {
+      "name": "RWTexture1DArray",
+      "kind": "hlsl"
+    },
+    {
+      "name": "RWTexture2D",
+      "kind": "hlsl"
+    },
+    {
+      "name": "RWTexture2DArray",
+      "kind": "hlsl"
+    },
+    {
+      "name": "RWTexture3D",
+      "kind": "hlsl"
+    },
+    {
+      "name": "sample",
+      "kind": "hlsl"
+    },
+    {
+      "name": "sampler",
+      "kind": "hlsl"
+    },
+    {
+      "name": "SamplerComparisonState",
+      "kind": "hlsl"
+    },
+    {
+      "name": "SamplerState",
+      "kind": "hlsl"
+    },
+    {
+      "name": "shared",
+      "kind": "hlsl"
+    },
+    {
+      "name": "short",
+      "kind": "reserved"
+    },
+    {
+      "name": "signed",
+      "kind": "reserved"
+    },
+    {
+      "name": "sizeof",
+      "kind": "reserved"
+    },
+    {
+      "name": "snorm",
+      "kind": "hlsl"
+    },
+    {
+      "name": "stateblock",
+      "kind": "hlsl"
+    },
+    {
+      "name": "stateblock_state",
+      "kind": "hlsl"
+    },
+    {
+      "name": "static",
+      "kind": "hlsl"
+    },
+    {
+      "name": "static_cast",
+      "kind": "reserved"
+    },
+    {
+      "name": "string",
+      "kind": "hlsl"
+    },
+    {
+      "name": "struct",
+      "kind": "hlsl"
+    },
+    {
+      "name": "StructuredBuffer",
+      "kind": "hlsl"
+    },
+    {
+      "name": "switch",
+      "kind": "hlsl"
+    },
+    {
+      "name": "tbuffer",
+      "kind": "hlsl"
+    },
+    {
+      "name": "technique",
+      "kind": "hlsl"
+    },
+    {
+      "name": "technique10",
+      "kind": "hlsl"
+    },
+    {
+      "name": "technique11",
+      "kind": "hlsl"
+    },
+    {
+      "name": "template",
+      "kind": "reserved"
+    },
+    {
+      "name": "texture",
+      "kind": "hlsl"
+    },
+    {
+      "name": "Texture1D",
+      "kind": "hlsl"
+    },
+    {
+      "name": "Texture1DArray",
+      "kind": "hlsl"
+    },
+    {
+      "name": "Texture2D",
+      "kind": "hlsl"
+    },
+    {
+      "name": "Texture2DArray",
+      "kind": "hlsl"
+    },
+    {
+      "name": "Texture2DMS",
+      "kind": "hlsl"
+    },
+    {
+      "name": "Texture2DMSArray",
+      "kind": "hlsl"
+    },
+    {
+      "name": "Texture3D",
+      "kind": "hlsl"
+    },
+    {
+      "name": "TextureCube",
+      "kind": "hlsl"
+    },
+    {
+      "name": "TextureCubeArray",
+      "kind": "hlsl"
+    },
+    {
+      "name": "this",
+      "kind": "reserved"
+    },
+    {
+      "name": "throw",
+      "kind": "reserved"
+    },
+    {
+      "name": "triangle",
+      "kind": "hlsl"
+    },
+    {
+      "name": "triangleadj",
+      "kind": "hlsl"
+    },
+    {
+      "name": "TriangleStream",
+      "kind": "hlsl"
+    },
+    {
+      "name": "true",
+      "kind": "hlsl"
+    },
+    {
+      "name": "try",
+      "kind": "reserved"
+    },
+    {
+      "name": "typedef",
+      "kind": "hlsl"
+    },
+    {
+      "name": "typename",
+      "kind": "reserved"
+    },
+    {
+      "name": "uint",
+      "kind": "hlsl"
+    },
+    {
+      "name": "uniform",
+      "kind": "hlsl"
+    },
+    {
+      "name": "union",
+      "kind": "reserved"
+    },
+    {
+      "name": "unorm",
+      "kind": "hlsl"
+    },
+    {
+      "name": "unsigned",
+      "kind": "hlsl"
+    },
+    {
+      "name": "using",
+      "kind": "reserved"
+    },
+    {
+      "name": "vector",
+      "kind": "hlsl"
+    },
+    {
+      "name": "vertexfragment",
+      "kind": "hlsl"
+    },
+    {
+      "name": "VertexShader",
+      "kind": "hlsl"
+    },
+    {
+      "name": "virtual",
+      "kind": "reserved"
+    },
+    {
+      "name": "void",
+      "kind": "hlsl"
+    },
+    {
+      "name": "volatile",
+      "kind": "hlsl"
+    },
+    {
+      "name": "while",
+      "kind": "hlsl"
+    }
+  ],
+  "types": [],
+  "functions": [],
+  "semantics": [],
+  "operators": []
+}
