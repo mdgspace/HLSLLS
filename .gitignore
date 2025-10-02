@@ -1,0 +1,17 @@
+# Python cache
+hlsl-specgen/**/__pycache__/
+hlsl-specgen/**/*.py[cod]
+
+# Virtual environments
+hlsl-specgen/.venv/
+hlsl-specgen/venv/
+hlsl-specgen/env/
+
+# Cache folder
+hlsl-specgen/cache/
+
+# Editor/OS junk
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
