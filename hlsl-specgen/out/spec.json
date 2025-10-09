@@ -9626,6 +9626,270 @@
       ]
     },
     {
+      "name": "SamplerState",
+      "description": [
+        "sampler state object"
+      ]
+    },
+    {
+      "name": "SamplerComparisonState",
+      "description": [
+        "comparison sampler state object"
+      ]
+    },
+    {
+      "name": "Texture1D",
+      "description": [
+        "1D sampled texture"
+      ]
+    },
+    {
+      "name": "Texture1DArray",
+      "description": [
+        "array of 1D sampled textures"
+      ]
+    },
+    {
+      "name": "Texture2D",
+      "description": [
+        "2D sampled texture"
+      ]
+    },
+    {
+      "name": "Texture2DArray",
+      "description": [
+        "array of 2D sampled textures"
+      ]
+    },
+    {
+      "name": "Texture3D",
+      "description": [
+        "3D sampled texture"
+      ]
+    },
+    {
+      "name": "TextureCube",
+      "description": [
+        "cube sampled texture"
+      ]
+    },
+    {
+      "name": "TextureCubeArray",
+      "description": [
+        "array of cube sampled textures (SM 4.1+)"
+      ]
+    },
+    {
+      "name": "Texture2DMS",
+      "description": [
+        "2D multisample texture"
+      ]
+    },
+    {
+      "name": "Texture2DMSArray",
+      "description": [
+        "array of 2D multisample textures"
+      ]
+    },
+    {
+      "name": "RWTexture1D<T>",
+      "description": [
+        "typed 1D UAV texture"
+      ]
+    },
+    {
+      "name": "RWTexture1DArray<T>",
+      "description": [
+        "typed 1D array UAV texture"
+      ]
+    },
+    {
+      "name": "RWTexture2D<T>",
+      "description": [
+        "typed 2D UAV texture"
+      ]
+    },
+    {
+      "name": "RWTexture2DArray<T>",
+      "description": [
+        "typed 2D array UAV texture"
+      ]
+    },
+    {
+      "name": "RWTexture3D<T>",
+      "description": [
+        "typed 3D UAV texture"
+      ]
+    },
+    {
+      "name": "Buffer<T>",
+      "description": [
+        "read-only typed buffer"
+      ]
+    },
+    {
+      "name": "RWBuffer<T>",
+      "description": [
+        "read-write typed buffer"
+      ]
+    },
+    {
+      "name": "StructuredBuffer<T>",
+      "description": [
+        "read-only structured buffer"
+      ]
+    },
+    {
+      "name": "RWStructuredBuffer<T>",
+      "description": [
+        "read-write structured buffer"
+      ]
+    },
+    {
+      "name": "AppendStructuredBuffer<T>",
+      "description": [
+        "append-only structured buffer"
+      ]
+    },
+    {
+      "name": "ConsumeStructuredBuffer<T>",
+      "description": [
+        "consume-only structured buffer"
+      ]
+    },
+    {
+      "name": "ByteAddressBuffer",
+      "description": [
+        "raw byte-address buffer (read-only)"
+      ]
+    },
+    {
+      "name": "RWByteAddressBuffer",
+      "description": [
+        "raw byte-address buffer (read-write)"
+      ]
+    },
+    {
+      "name": "RasterizerOrderedBuffer<T>",
+      "description": [
+        "rasterizer-ordered typed buffer"
+      ]
+    },
+    {
+      "name": "RasterizerOrderedStructuredBuffer<T>",
+      "description": [
+        "rasterizer-ordered structured buffer"
+      ]
+    },
+    {
+      "name": "RasterizerOrderedByteAddressBuffer",
+      "description": [
+        "rasterizer-ordered byte-address buffer"
+      ]
+    },
+    {
+      "name": "RasterizerOrderedTexture1D<T>",
+      "description": [
+        "rasterizer-ordered 1D UAV texture"
+      ]
+    },
+    {
+      "name": "RasterizerOrderedTexture1DArray<T>",
+      "description": [
+        "rasterizer-ordered 1D array UAV texture"
+      ]
+    },
+    {
+      "name": "RasterizerOrderedTexture2D<T>",
+      "description": [
+        "rasterizer-ordered 2D UAV texture"
+      ]
+    },
+    {
+      "name": "RasterizerOrderedTexture2DArray<T>",
+      "description": [
+        "rasterizer-ordered 2D array UAV texture"
+      ]
+    },
+    {
+      "name": "RasterizerOrderedTexture3D<T>",
+      "description": [
+        "rasterizer-ordered 3D UAV texture"
+      ]
+    },
+    {
+      "name": "PointStream<T>",
+      "description": [
+        "geometry shader output stream of points"
+      ]
+    },
+    {
+      "name": "LineStream<T>",
+      "description": [
+        "geometry shader output stream of lines"
+      ]
+    },
+    {
+      "name": "TriangleStream<T>",
+      "description": [
+        "geometry shader output stream of triangles"
+      ]
+    },
+    {
+      "name": "InputPatch<T, N>",
+      "description": [
+        "hull shader input control point array"
+      ]
+    },
+    {
+      "name": "OutputPatch<T, N>",
+      "description": [
+        "domain/hull shader patch control point array"
+      ]
+    },
+    {
+      "name": "RaytracingAccelerationStructure",
+      "description": [
+        "top-level acceleration structure SRV resource"
+      ]
+    },
+    {
+      "name": "FeedbackTexture2D<T>",
+      "description": [
+        "sampler feedback-writing texture resource (SM 6.5+)"
+      ]
+    },
+    {
+      "name": "FeedbackTexture2DArray<T>",
+      "description": [
+        "sampler feedback-writing texture array resource (SM 6.5+)"
+      ]
+    },
+    {
+      "name": "cbuffer",
+      "description": [
+        "constant buffer declaration block (groups uniform variables)"
+      ]
+    },
+    {
+      "name": "tbuffer",
+      "description": [
+        "texture buffer declaration block (legacy-style uniform block)"
+      ]
+    },
+    {
+      "name": "texture",
+      "description": [
+        "legacy lowercase texture object (deprecated)"
+      ]
+    },
+    {
+      "name": "sampler",
+      "description": [
+        "legacy lowercase sampler object (deprecated)"
+      ]
+    },
+    {
       "name": "vector<Type, Components>",
       "description": [
         "generic vector"

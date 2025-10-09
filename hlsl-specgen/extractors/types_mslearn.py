@@ -42,6 +42,9 @@ class TypesMSLearn(Extractor):
         )
         types_items.extend(buf_items)
 
+        # 5) add object/texture/sampler types from static inputs
+        types_items.extend(self._add_object_types_from_inputs())
+
         # 5) optional generic placeholders (nice for autocomplete)
         types_items.append(
             {"name": "vector<Type, Components>", "description": ["generic vector"]})
@@ -187,4 +190,28 @@ class TypesMSLearn(Extractor):
                 "description": [f"read-only buffer of {t}"]
             })
 
+        return out
+
+    def _add_object_types_from_inputs(self, module_path: str = "extractors.inputs.object_types_data", attr: str = "TYPES"):
+        """Load static HLSL object/texture/sampler types from the inputs module."""
+        import importlib
+
+        mod = importlib.import_module(module_path)
+        types_list = getattr(mod, attr, None)
+        if not isinstance(types_list, list):
+            raise RuntimeError(f"{module_path}.{attr} not found or not a list")
+
+        out = []
+        for i, t in enumerate(types_list):
+            if not isinstance(t, dict) or "name" not in t:
+                raise RuntimeError(
+                    f"{module_path}.{attr}[{i}] must be a dict with 'name'")
+            name = t["name"]
+            desc = t.get("description", [])
+            # normalize description to list[str]
+            if isinstance(desc, str):
+                desc = [desc]
+            elif not isinstance(desc, list):
+                desc = [str(desc)]
+            out.append({"name": name, "description": desc})
         return out
