@@ -21,3 +21,21 @@ HLSL language server will provide following features:
 - Language Parser (wip)
 - Editor workspace management
 - Syntax features
+
+## Editor Integration
+
+Install the language server in your $PATH.
+
+### Kakoune (using [kakoune-lsp](https://github.com/kakoune-lsp/kakoune-lsp))
+In the lsp configuration file, add
+
+```
+hook -group lsp-filetype-hlsl global BufSetOption filetype=hlsl %{
+    set-option buffer lsp_servers %{
+        [hlsl-language-server]
+        root_globs = [ "*.hlsl", "*.fx" ]
+        command = "hlslls"
+    }
+}
+```
+
